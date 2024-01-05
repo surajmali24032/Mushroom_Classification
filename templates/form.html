@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mushroom Edibility Prediction Form</title>
+</head>
+<body>
+    <h1>Mushroom Edibility Prediction Form</h1>
+    <form action="/predict" method="post">
+        <label for="cap_shape">Cap Shape:</label>
+        <select id="cap_shape" name="cap_shape">
+            <option value="b">Bell</option>
+            <option value="c">Conical</option>
+            <option value="x">Convex</option>
+            <option value="f">Flat</option>
+            <option value="k">Knobbed</option>
+            <option value="s">Sunken</option>            
+            
+        </select>
+        <br>
+
+        <label for="cap_surface">Cap Surface:</label>
+        <select id="cap_surface" name="cap_surface">
+            <option value="f">Fibrous</option>
+            <option value="g">Grooves</option>
+            <option value="y">Scaly</option>
+            <option value="s">Smooth</option>    
+        </select>
+        <br>
+
+        <label for="cap_color">Cap Color:</label>
+        <select id="cap_color" name="cap_color">
+            <option value="g">Gray</option>
+            <option value="n">Brown</option>
+            <option value="p">Pink</option>
+            <option value="w">White</option>
+            <option value="b">Buff</option>
+            <option value="y">Yellow</option>
+            <option value="e">Red</option>
+            <option value="r">Green</option>
+            <option value="u">Purple</option>
+            <option value="c">Cinnamon</option>    
+        </select>
+        <br>        
+
+        <label for="bruise">Bruise:</label>
+        <select id="bruise" name="bruise">
+            <option value="t">Bruises</option>
+            <option value="f">No</option> 
+        </select>
+        <br>        
+
+        <label for="odor">Odor:</label>
+        <select id="odor" name="odor">
+            <option value="n">None</option>
+            <option value="c">Creosote</option>
+            <option value="a">Almond</option>
+            <option value="f">Foul</option>
+            <option value="s">Spicy</option>
+            <option value="l">Anise</option>
+            <option value="y">Fishy</option>
+            <option value="p">Pungent</option>
+            <option value="m">Musty</option>    
+        </select>
+        <br>         
+
+        <label for="gill_attachment">Gill Attachment:</label>
+        <select id="gill_attachment" name="gill_attachment">
+            <option value="f">Free</option>
+            <option value="a">Attached</option> 
+        </select>
+        <br> 
+
+        <label for="gill_spacing">Gill Spacing:</label>
+        <select id="gill_spacing" name="gill_spacing">
+            <option value="c">Close</option>
+            <option value="w">Crowed</option> 
+        </select>
+        <br> 
+
+        <label for="gill_size">Gill Size:</label>
+        <select id="gill_size" name="gill_size">
+            <option value="b">Broad</option>
+            <option value="n">Narrow</option> 
+        </select>
+        <br>
+
+        <label for="gill_color">Gill Color:</label>
+        <select id="gill_color" name="gill_color">
+            <option value="n">Brown</option>
+            <option value="k">Black</option>
+            <option value="y">Yellow</option>
+            <option value="g">Gray</option>
+            <option value="h">Chocolate</option>
+            <option value="u">Purple</option>
+            <option value="p">Pink</option>
+            <option value="w">White</option>
+            <option value="b">Buff</option>
+            <option value="r">Green</option>
+            <option value="e">Red</option>
+            <option value="o">Orange</option>                
+        </select>
+        <br> 
+
+        <label for="stalk_shape">Stalk Shape:</label>
+        <select id="stalk_shape" name="stalk_shape">
+            <option value="t">Tapering</option>
+            <option value="e">Enlarging</option> 
+        </select>
+        <br>
+
+        <label for="stalk_root">Stalk Root:</label>
+        <select id="stalk_root" name="stalk_root">
+            <option value="b">Bulbous</option>
+            <option value="e">Equal</option>
+            <option value="c">Club</option>
+            <option value="r">Rooted</option>  
+        </select>
+        <br>
+
+        <label for="stalk_surface_above_ring">Stalk Surface Above Ring:</label>
+        <select id="stalk_surface_above_ring" name="stalk_surface_above_ring">
+            <option value="s">Smooth</option>
+            <option value="f">Fibrous</option>
+            <option value="k">Silky</option>
+            <option value="y">Scaly</option>  
+        </select>
+        <br>
+        
+        <label for="stalk_surface_below_ring">Stalk Surface Below Ring:</label>
+        <select id="stalk_surface_below_ring" name="stalk_surface_below_ring">
+            <option value="s">Smooth</option>
+            <option value="f">Fibrous</option>
+            <option value="k">Silky</option>
+            <option value="y">Scaly</option>  
+        </select>
+        <br>
+
+        <label for="stalk_color_above_ring">Stalk Color Above Ring:</label>
+        <select id="stalk_color_above_ring" name="stalk_color_above_ring">
+            <option value="g">Gray</option>
+            <option value="w">White</option>
+            <option value="o">Orange</option>
+            <option value="b">Buff</option>
+            <option value="p">Pink</option>
+            <option value="n">Brown</option>
+            <option value="e">Red</option>
+            <option value="y">Yellow</option>
+            <option value="c">Cinnamon</option>               
+        </select>
+        <br>         
+
+        <label for="stalk_color_below_ring">Stalk Color Below Ring:</label>
+        <select id="stalk_color_below_ring" name="stalk_color_below_ring">
+            <option value="g">Gray</option>
+            <option value="w">White</option>
+            <option value="o">Orange</option>
+            <option value="b">Buff</option>
+            <option value="p">Pink</option>
+            <option value="n">Brown</option>
+            <option value="e">Red</option>
+            <option value="y">Yellow</option>
+            <option value="c">Cinnamon</option>                
+        </select>
+        <br>
+        
+        <label for="veil_color">Veil Color:</label>
+        <select id="veil_color" name="veil_color">
+            <option value="w">White</option>
+            <option value="n">Brown</option>
+            <option value="y">Yellow</option>
+            <option value="o">Orange</option>  
+        </select>
+        <br>
+
+        <label for="ring_number">Ring Number:</label>
+        <select id="ring_number" name="ring_number">
+            <option value="o">One</option>
+            <option value="t">Two</option>
+            <option value="n">None</option> 
+        </select>
+        <br>
+
+        <label for="ring_type">Ring Type:</label>
+        <select id="ring_type" name="ring_type">
+            <option value="p">Pendant</option>
+            <option value="e">Evanescent</option>
+            <option value="l">Large</option>
+            <option value="f">Flaring</option>
+            <option value="n">None</option>  
+        </select>
+        <br>
+        
+        <label for="spore_print_color">Spore Print Color:</label>
+        <select id="spore_print_color" name="spore_print_color">
+            <option value="k">Black</option>
+            <option value="o">Orange</option>
+            <option value="n">Brown</option>
+            <option value="w">White</option>
+            <option value="h">Chocolate</option>
+            <option value="r">Green</option>
+            <option value="b">Buff</option>
+            <option value="u">Purple</option>
+            <option value="y">Yellow</option>               
+        </select>
+        <br>
+
+        <label for="population">Population:</label>
+        <select id="population" name="population">
+            <option value="v">Several</option>
+            <option value="a">Abundant</option>
+            <option value="c">Clustered</option>
+            <option value="n">Numerous</option>
+            <option value="s">Scattered</option>
+            <option value="y">Solitary</option>             
+        </select>
+        <br>
+
+        <label for="habitat">Habitat:</label>
+        <select id="habitat" name="habitat">
+            <option value="d">Woods</option>
+            <option value="g">Grasses</option>
+            <option value="l">Leaves</option>
+            <option value="m">Meadows</option>
+            <option value="p">Paths</option>
+            <option value="u">Urban</option>
+            <option value="w">Waste</option>             
+        </select>
+        <br>
+
+     
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
